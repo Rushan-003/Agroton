@@ -16,6 +16,11 @@ button {
     cursor: pointer;
 }
 
+.text-yellow {
+    color: #F2A531;
+    font-weight: 600;
+}
+
 .header {
     padding: 30px 0px;
 }
@@ -185,6 +190,7 @@ button {
     border-radius: 20px; */ /* Доделать */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 332px 332px;
 }
 
 .products__block-title {
@@ -199,6 +205,67 @@ button {
 .products__block-elem {
     max-width: 460px;
     max-height: 332px;
+    padding-top: 51px;
+    padding-left: 26px;
+}
+
+.products__block-elem:nth-child(odd) {
+    color: #fff;
+}
+
+.products-title {
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 14px;
+    /* color: #0e0d0d; */
+}
+
+.products-subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    /* color: #fff; */
+}
+
+.products__block-elem-1 {
+    background-image: url(/picture/background_1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-radius: 20px;
+}
+
+.products__block-elem-2 {
+    background-image: url(/picture/background_2.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-radius: 20px;
+}
+
+.products__block-elem-3 {
+    background-image: url(/picture/background_3.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-radius: 20px;
+}
+
+.products__block-elem-4 {
+    background-image: url(/picture/background_4.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-radius: 20px;
+}
+
+.products__block-elem-5 {
+    background-image: url(/picture/background_5.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-radius: 20px;
+}
+
+.products__block-elem-6 {
+    background-image: url(/picture/background_6.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-radius: 20px;
 }
 
 .products__block-button {
@@ -206,6 +273,88 @@ button {
     gap: 40px;
     background-color: #000;
     color: #fff;
+    max-width: 242px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 96px;
+}
+
+.products__block-button-elem {
+    width: 54px;
+    height: 54px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.block__cooperation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.block__cooperation-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.block__cooperation-text {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.button_link { /* Глобальная переменная */
+    display: flex;
+    /* gap: 38px; */
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    max-width: 242px;
+    border-radius: 96px;
+}
+
+.block__cooperation-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block__cooperation-right {
+    max-width: 720px;
+    /* width: 720px; */
+}
+
+.block__cooperation-right-inner {
+    display: flex;
+    background-color: #F4F4E7;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.button_link-text {
+    padding: 19px 38px 19px 44px;
+    text-transform: uppercase;
+}
+
+.button_link-image {
+    background-color: #fff;
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+}
+
+
+.block__cooperation-right-text {
+    background-color: #0D1615;
+    border-radius: 10px;
+    padding: 30px 30px 30px 30px;
+    color: #fff;
+    font-weight: 300;
+
+}
+
+.block__cooperation-list {
+    list-style: url(/picture/style-li.svg);
 }
 
 .section__news {
@@ -292,6 +441,30 @@ button {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+}
+
+.picture__block {
+    background-image: url(/picture/background_7.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    min-height: 620px;
+}
+
+.picture__block-subtitle {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.picture__block-title {
+    font-weight: 600;
+    font-size: 300px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f2a531;
 }
 
 #main__news {
